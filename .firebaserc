@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "the-best-game-9923c": {
+      "hosting": {
+        "the-best-game": [
+          "the-best-game-9923c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "the-best-game-9923c"
+  }
+}

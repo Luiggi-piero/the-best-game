@@ -1,1 +1,17 @@
-<p>the-best-game works!</p>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div *ngFor="let game of games" class="col">
+    <div class="card text-bg-dark">
+      <img [src]="game.url" class="card-img-top" [alt]="game.name" />
+      <div class="card-body">
+        <h5 class="card-title">{{ game.name }}</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          obcaecati optio voluptatum magnam ullam culpa.
+        </p>
+        <div class="d-grid col-4 mx-auto">
+            <button class="btn btn-outline-primary" (click)="vote(game)">Votar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

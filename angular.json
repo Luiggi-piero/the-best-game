@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "the-best-game:build:production",
+            "firebaseProject": "the-best-game-9923c",
+            "firebaseHostingSite": "the-best-game-9923c"
+          }
         }
       }
     }
