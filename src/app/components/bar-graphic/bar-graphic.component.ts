@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, Input, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-bar-graphic',
@@ -6,28 +6,30 @@ import { Component, OnDestroy } from '@angular/core';
   styleUrls: ['./bar-graphic.component.css'],
 })
 export class BarGraphicComponent implements OnDestroy {
-  results: any[] = [
-    {
-      name: 'Game 1',
-      value: 30,
-    },
-    {
-      name: 'Game 2',
-      value: 70,
-    },
-    {
-      name: 'Game 3',
-      value: 20,
-    },
-    {
-      name: 'Game 4',
-      value: 10,
-    },
-    {
-      name: 'Game 5',
-      value: 60,
-    },
-  ];
+  // results: any[] = [
+  //   {
+  //     name: 'Game 1',
+  //     value: 30,
+  //   },
+  //   {
+  //     name: 'Game 2',
+  //     value: 70,
+  //   },
+  //   {
+  //     name: 'Game 3',
+  //     value: 20,
+  //   },
+  //   {
+  //     name: 'Game 4',
+  //     value: 10,
+  //   },
+  //   {
+  //     name: 'Game 5',
+  //     value: 60,
+  //   },
+  // ];
+
+  @Input() gamesResults: { name: string; value: number }[] = [];
 
   // Dimensiones de la gráfica
   // view: [number, number] = [700, 400];

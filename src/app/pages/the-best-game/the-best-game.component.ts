@@ -11,11 +11,11 @@ import { GameService } from 'src/app/services/game.service';
 export class TheBestGameComponent implements OnInit {
   games: Game[] = [];
 
-  constructor(private gameService: GameService) {
-    gameService.getGames().subscribe((resp) => (this.games = resp));
-  }
+  constructor(private gameService: GameService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.gameService.getGames().subscribe((resp) => (this.games = resp));
+  }
 
   vote(game: Game) {
     this.gameService
