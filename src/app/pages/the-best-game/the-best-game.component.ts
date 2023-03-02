@@ -22,7 +22,7 @@ export class TheBestGameComponent implements OnInit {
       .vote(game)
       .then((resp) => {
         Swal.fire({
-          title: 'Gracias',
+          title: 'Gracias!',
           text: `Votaste por ${game.name}`,
           icon: 'success',
         });

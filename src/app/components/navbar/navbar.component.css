@@ -1,0 +1,57 @@
+.title span{
+    font-weight: lighter;
+}
+
+.menu-container {
+  min-height: 45vh;
+  width: 100%;
+  background: linear-gradient(#0000002b, #0000002b),
+    url("../../../assets/images/bg.png") center center no-repeat;
+}
+
+a {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  color: #000000;
+}
+
+.options span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: linear-gradient(120deg, #64008b, #dc145d, #ffa500);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+a.active {
+  background: linear-gradient(120deg, #64008b, #dc145d, #ffa500);
+  color: #fff;
+}
