@@ -1,5 +1,5 @@
-.title span{
-    font-weight: lighter;
+.title span {
+  font-weight: lighter;
 }
 
 .menu-container {
@@ -7,6 +7,7 @@
   width: 100%;
   background: linear-gradient(#0000002b, #0000002b),
     url("../../../assets/images/bg.png") center center no-repeat;
+  background-size: cover;
 }
 
 a {
