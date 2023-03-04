@@ -7,8 +7,8 @@ import { environment } from '../environments/environment';
 
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+// import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+// import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 
 import { ComponentsModule } from './components/components.module';
 
@@ -27,8 +27,8 @@ import { TheBestGameComponent } from './pages/the-best-game/the-best-game.compon
     ComponentsModule,
     AngularFirestoreModule,
     AngularFireModule.initializeApp(environment.firebase),
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore())
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]
